@@ -1,0 +1,17 @@
+@import 'tailwindcss';
+
+:root {
+    --primary: #B7B5B5;
+    --secondary: #D76B6B;
+    --text-color: #3C3C3C;
+    --bg-color: #0A1F3B;
+}
+
+body, html {
+    font-family: "Jacques Francois", serif;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    background-image: url('pattern.png');
+    background-size: 500px 400px;
+
+}
