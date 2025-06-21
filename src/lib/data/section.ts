@@ -6,9 +6,7 @@ export const navItems = [
     { id: 5, text: 'Contact', href: '#contact'},
 ]
 
-export const aboutMe = [
-  "I’ve been working as a web developer for 3 years, with a special interest in the Svelte ecosystem. I enjoy creating modern, clean, and functional websites, focusing not only on user experience but also on writing clear and efficient code.",
-  
+export const aboutMe = [  
   "I’m someone who values communication and cares about understanding the meaning and purpose behind each project. I believe that knowing the reason behind things makes every solution smarter, more consistent, and meaningful.",
   
   "I’m constantly exploring new trends and technologies, and whenever something catches my interest, I don't hesitate to dive in and learn more about it. Outside of programming, I have a strong interest in philosophy and psychology. I also enjoy spending my free time playing Counter-Strike 2, reading books, or creating music.",

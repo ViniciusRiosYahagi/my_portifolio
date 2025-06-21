@@ -1,44 +1,26 @@
-<script>
-	import { michelleImage } from '$lib/assets/images';
-
-	let kanji = $state('矢作');
-
-	function over() {
-		kanji = 'Yahagi';
-	}
-	
-	function leave() {
-		kanji = '矢作';
-	}
+<script lang="ts">
 </script>
 
-<section class="relative h-screen">
-	<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
+<section class="relative flex h-screen items-center justify-center gap-6">
+	<div>
 		<img
-			class="rounded-full lg:size-full border-2 border-[var(--secondary)]"
+			class="size-fit rounded-lg"
 			src="https://avatars.githubusercontent.com/u/136207802?v=4"
 			alt="vinicius"
 		/>
 	</div>
 
-	<div class="absolute top-4/5">
-		<div>
-			<h2 class="text-4xl text-[var(--primary)] lg:text-6xl">
-				Vinicius
-				{#key kanji}
-					<span
-						class="text-[var(--secondary)]"
-						role="button"
-						onmouseenter={over}
-						onmouseleave={leave}
-						tabindex="0"
-					>
-						{kanji}
-					</span>
-				{/key}
-				Rios
-			</h2>
-		</div>
-		<h1 class="text-5xl text-[var(--secondary)] lg:text-8xl">Full-Stack Web Developer</h1>
+	<div class="h-115 border-l-3 border-[var(--secondary)]"></div>
+
+	<div class="flex max-w-3xl flex-col gap-3">
+		<h2 class="text-4xl text-[var(--primary)] uppercase lg:text-5xl">
+			Vinicius <span class="text-[var(--secondary)]">矢作</span> Rios
+		</h2>
+		<h1 class="text-5xl text-[var(--secondary)] lg:text-7xl">Full-Stack Web Developer</h1>
+		<p class="text-2xl text-pretty text-[var(--primary)]">
+			I’ve been working as a web developer for 3 years, with a special interest in the Svelte
+			ecosystem. I enjoy creating modern, clean, and functional websites, focusing not only on user
+			experience but also on writing clear and efficient code.
+		</p>
 	</div>
 </section>

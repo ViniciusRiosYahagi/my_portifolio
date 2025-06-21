@@ -1,9 +1,12 @@
 <script>
-	import { Hero, TextSection } from '$lib/components';
+	import { Hero, TextSection , Section} from '$lib/components';
+	import TextLoop from '$lib/components/TextLoop.svelte';
 	import { aboutMe } from '$lib/data/section';
 </script>
 
-<main class="px-20">
+<main>
 	<Hero />
-	<TextSection title="About Me" id="about" texts={aboutMe}/>
+	<Section id="about" title="About Me">
+		<TextLoop texts={aboutMe}/>
+	</Section>
 </main>
