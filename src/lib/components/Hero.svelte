@@ -1,14 +1,7 @@
 <script lang="ts">
-	const heroInfos = $state([
-		{
-			name: 'Vinicius',
-			middleName: '矢作',
-			lastName: 'Rios',
-			career: 'Full-Stack Web Developer',
-			shortDescription:
-				'I’ve been working as a web developer for 3 years, with a special interest in the Svelte ecosystem. I enjoy creating modern, clean, and functional websites, focusing not only on user experience but also on writing clear and efficient code.'
-		}
-	]);
+	import { Button } from '$lib/components';
+	import { heroInfos } from '$lib/data/data';
+	import { Github, Linkedin } from '$lib/components/icons';
 </script>
 
 <section class="relative flex h-screen items-center justify-center gap-6">
@@ -22,13 +15,18 @@
 
 	<div class="h-115 border-l-3 border-[var(--secondary)]"></div>
 
-	<div class="flex flex-col gap-3">
-		<h2 class="text-3xl text-[var(--primary)] uppercase lg:text-6xl">
-			{heroInfos[0].name}
-			<span class="text-[var(--secondary)]">{heroInfos[0].middleName}</span>
-			{heroInfos[0].lastName}
+	<div class="flex flex-col items-start gap-3">
+		<h2 class="text-3xl text-[var(--primary)] uppercase lg:text-5xl">
+			{heroInfos.name}
+			<span class="text-[var(--secondary)]">{heroInfos.middleName}</span>
+			{heroInfos.lastName}
 		</h2>
-		<h1 class="text-5xl text-[var(--secondary)] lg:text-8xl">{heroInfos[0].career}</h1>
-		<p class="max-w-4xl text-balance text-[var(--primary)]">{heroInfos[0].shortDescription}</p>
+		<h1 class="text-5xl text-[var(--secondary)] lg:text-7xl">{heroInfos.career}</h1>
+		<p class="max-w-4xl text-balance text-[var(--primary)]">{heroInfos.shortDescription}</p>
+
+		<div class="flex gap-3">
+			<Button href="https://github.com/ViniciusRiosYahagi">GitHub</Button>
+			<Button href="Vinicius-Yahagi-Rios.pdf" download="Vinicius-Yahagi-Rios.pdf">Donwload CV</Button>
+		</div>
 	</div>
 </section>

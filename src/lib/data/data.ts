@@ -5,6 +5,15 @@ export const navItems = [
   { id: 5, text: 'Contact', href: '#contact' },
 ]
 
+export const heroInfos = {
+  name: 'Vinicius',
+  middleName: '矢作',
+  lastName: 'Rios',
+  career: 'Full-Stack Web Developer',
+  shortDescription:
+    'I’ve been working as a web developer for 3 years, with a special interest in the Svelte ecosystem. I enjoy creating modern, clean, and functional websites, focusing not only on user experience but also on writing clear and efficient code.'
+}
+
 export const aboutMe = [
   "I’m someone who values communication and cares about understanding the meaning and purpose behind each project. I believe that knowing the reason behind things makes every solution smarter, more consistent, and meaningful.",
 
@@ -82,4 +91,3 @@ export const projects = [
     text: "The Parallax project was my favorite during the HTML and CSS course I took on Udemy, so I decided to post it."
   }
 ];
-
