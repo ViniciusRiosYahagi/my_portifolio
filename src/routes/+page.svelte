@@ -1,6 +1,6 @@
 <script>
-	import { Hero, Section, Tags, Button } from '$lib/components';
-	import { Email, Github, Linkedin } from '$lib/components/icons';
+	import { Hero, Section, Tags } from '$lib/components';
+	import { Email, Linkedin, WhatsApp } from '$lib/components/icons';
 	import { aboutMe, techs, projects } from '$lib/data/data';
 </script>
 
@@ -22,6 +22,8 @@
 	<Section id="projects" title="Projects">
 		{#each projects as { tags, name, date, text, href }}
 			<a
+				target="_blank"
+				rel="noopener noreferrer"
 				class="flex w-96 flex-col justify-between gap-3 rounded border-2 p-4 duration-300 hover:translate-y-1"
 				{href}
 			>
@@ -45,19 +47,9 @@
 			</p>
 
 			<div class="flex gap-3">
-				<Button
-					href="mailto:viniciusyahagirios@hotmail.com?subject=Contato%20pelo%20site&body=Olá,%20gostaria%20de%20entrar%20em%20contato."
-				>
-					<Email />
-				</Button>
-
-				<Button href="https://github.com/ViniciusRiosYahagi">
-					<Github />
-				</Button>
-
-				<Button href="https://www.linkedin.com/in/vinicius-yahagi-rios-350647280/">
-					<Linkedin />
-				</Button>
+				<Email />
+				<Linkedin />
+				<WhatsApp />
 			</div>
 		</div>
 	</Section>

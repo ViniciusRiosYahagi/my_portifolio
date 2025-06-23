@@ -8,7 +8,7 @@
 <svelte:window bind:scrollY={y} />
 
 <header class={`fixed top-0 z-99 w-full p-5 duration-300 ${y > 0 ? 'shadow-2xl' : ''}`}>
-	<nav class="flex items-center justify-between text-[var(--primary)]">
+	<nav class="flex items-center justify-evenly text-[var(--primary)]">
 		<div>
 			<a href="/">
 				<h1 class="text-5xl text-[var(--secondary)]">矢作</h1>

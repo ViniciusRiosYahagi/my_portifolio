@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { Button } from '$lib/components';
 	import { heroInfos } from '$lib/data/data';
-	import { Github, Linkedin } from '$lib/components/icons';
+	import { Github } from '$lib/components/icons';
 </script>
 
 <section class="relative flex h-screen items-center justify-center gap-6">
@@ -25,7 +25,7 @@
 		<p class="max-w-4xl text-balance text-[var(--primary)]">{heroInfos.shortDescription}</p>
 
 		<div class="flex gap-3">
-			<Button href="https://github.com/ViniciusRiosYahagi">GitHub</Button>
+			<Github />
 			<Button href="Vinicius-Yahagi-Rios.pdf" download="Vinicius-Yahagi-Rios.pdf">Donwload CV</Button>
 		</div>
 	</div>
