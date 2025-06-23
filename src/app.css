@@ -1,17 +1,17 @@
 @import 'tailwindcss';
 
 :root {
-    --primary: #B7B5B5;
+    --primary: #dadada;
     --secondary: #D76B6B;
     --text-color: #3C3C3C;
-    --bg-color: #1d304b;
+    --bg-color: #133153;
 }
 
 body, html {
-    font-family: "Jacques Francois", serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
     /* background-image: url('pattern.png');
-    background-size: 500px 400px; */
+    background-size: 500px 250px; */
     scroll-behavior: smooth;
 }
