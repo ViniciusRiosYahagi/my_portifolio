@@ -6,7 +6,7 @@
 	<h1 class="text-3xl">{subtitle}</h1>
 	<ul class="flex flex-wrap gap-2">
 		{#each tags as tag}
-			<li class="rounded border-2 border-[var(--secondary)] p-2 text-center">{tag}</li>
+			<li class="rounded border-1 border-[var(--secondary)] p-2 text-center">{tag}</li>
 		{/each}
 	</ul>
 </div>

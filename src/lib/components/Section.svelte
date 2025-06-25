@@ -1,21 +1,26 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
+	import type { PropsText } from '$lib/types/types';
 
-	interface PropsText {
-		title: string;
-		id: string;
-		children: Snippet;
-		isColumn?: boolean;
-	}
-
-	let { id, title, children, isColumn = false }: PropsText = $props();
+	let { id, title, children, isColumn = false, isCenter = true }: PropsText = $props();
+	let x = $state(0);
 </script>
 
-<section class="flex h-screen w-full flex-wrap items-center gap-6" {id}>
-	<div class="border-l-3 border-[var(--secondary)]">
-		<h1 class="mb-6 ml-6 text-7xl text-[var(--secondary)]">{title}</h1>
-		<div class={`ml-6 flex flex-wrap gap-3 text text-[var(--primary)] ${isColumn ? 'flex-col' : ''}`}>
-			{@render children()}
+<svelte:body bind:clientWidth={x} />
+
+<section
+	class={`flex lg:min-h-screen lg:max-w-7xl flex-col items-center gap-6 p-5 text-[var(--primary)] lg:flex-row ${isCenter ? 'justify-center' : 'justify-start'}`}
+	{id}
+>
+	{#if title}
+		<div
+			class={`flex gap-3 border-l-2 border-[var(--secondary)] pl-6 ${isColumn ? 'flex-col' : 'flex-row'}`}
+		>
+			<h1 class="text-3xl text-[var(--secondary)] lg:text-6xl">{title}</h1>
+			{#if title}
+				{@render children()}
+			{/if}
 		</div>
-	</div>
+	{:else}
+		{@render children()}
+	{/if}
 </section>
