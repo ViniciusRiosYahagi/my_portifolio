@@ -4,7 +4,7 @@
 	import { aboutMe, techs, projects } from '$lib/data/data';
 </script>
 
-<main class="flex justify-center items-center flex-col p-10 lg:p-0">
+<main class="flex justify-center items-center flex-col p-12 lg:p-0">
 	<Hero />
 	
 	<Section id="about" title="About Me" isColumn={true}>

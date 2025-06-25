@@ -13,9 +13,9 @@
 >
 	{#if title}
 		<div
-			class={`flex gap-3 border-l-2 border-[var(--secondary)] pl-6 ${isColumn ? 'flex-col' : 'flex-row'}`}
+			class={`flex gap-3 border-l-1 border-[var(--secondary)] pl-6 ${isColumn ? 'flex-col' : 'flex-row'}`}
 		>
-			<h1 class="text-3xl text-[var(--secondary)] lg:text-6xl">{title}</h1>
+			<h1 class="text-2xl text-[var(--secondary)] lg:text-6xl">{title}</h1>
 			{#if title}
 				{@render children()}
 			{/if}

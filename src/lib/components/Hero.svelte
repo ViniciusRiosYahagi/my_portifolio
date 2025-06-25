@@ -13,11 +13,11 @@
 		/>
 	</div>
 
-	<div class="hidden h-96 border-l-3 border-[var(--secondary)] lg:block"></div>
+	<div class="hidden h-96 border-l-1 border-[var(--secondary)] lg:block"></div>
 
 	<div class="flex flex-col gap-3">
 		<div>
-			<h2 class="text-center text-2xl text-[var(--primary)] uppercase lg:text-left lg:text-4xl">
+			<h2  class="text-center text-2xl text-[var(--primary)] uppercase lg:text-left lg:text-4xl">
 				{heroInfos.name}
 				<span class="text-[var(--secondary)]">{heroInfos.middleName}</span>
 				{heroInfos.lastName}
@@ -25,7 +25,7 @@
 			<h1 class="text-center text-3xl text-[var(--secondary)] lg:text-left lg:text-6xl">
 				{heroInfos.career}
 			</h1>
-			<p class="text-center text-balance text-[var(--primary)] lg:text-left">
+			<p class="text-center text-pretty text-[var(--primary)] lg:text-left">
 				{heroInfos.shortDescription}
 			</p>
 		</div>

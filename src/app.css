@@ -1,9 +1,9 @@
 @import 'tailwindcss';
 
 :root {
-    --primary: #a8a8a8;
+    --primary: #bbbbbb;
     --secondary: #a6e641;
-    --bg-color: #1a1a1a;
+    --bg-color: #181818;
 }
 
 body, html {
