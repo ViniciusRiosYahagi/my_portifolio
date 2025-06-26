@@ -1,5 +1,7 @@
+import { windowX } from '$lib/stores/windows';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import { get } from 'svelte/store';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,6 +13,10 @@ export function gsapFrom(options: GSAPTweenVars) {
 
 export function gsapScroll() {
 	return (element: HTMLElement) => {
+		if (get(windowX) < 600) {
+			return
+		}
+		
 		gsap.from(element, {
 			scrollTrigger: {
 				trigger: element,

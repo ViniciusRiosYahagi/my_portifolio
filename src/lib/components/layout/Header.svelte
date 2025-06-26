@@ -3,7 +3,8 @@
 	import { Button } from '$lib/components';
 	import { MenuIcon } from '$lib/components/icons';
 	import { slide } from 'svelte/transition';
-	import { gsapFrom } from '$lib/utils/gsap';
+	import { gsapFrom, gsapItems } from '$lib/utils/gsap';
+	import { windowX } from '$lib/stores/windows';
 
 	let y = $state(0);
 	let x = $state(0);
@@ -14,18 +15,18 @@
 <svelte:body bind:clientWidth={x} />
 
 <header class={`fixed top-0 z-99 w-full p-5 duration-300 bg-[var(--bg-color)] ${y > 0 ? 'shadow-2xl' : ''}`}>
-	<nav {@attach gsapFrom({ translateY: -50, duration: 0.5, opacity: 0})} class="flex items-center justify-around text-[var(--primary)]">
+	<nav {@attach gsapFrom({ translateY: -50, duration: 0.5, opacity: 0, ease: "back.inOut"})} class="flex items-center justify-around text-[var(--primary)]">
 		<div>
 			<a href="/">
-				<h1 class="text-3xl text-[var(--secondary)] lg:text-5xl">矢作</h1>
+				<h1 class="text-4xl text-[var(--secondary)] lg:text-5xl">矢作</h1>
 			</a>
 		</div>
 
-		{#if x <= 1023}
+		{#if $windowX <= 1023}
 			<MenuIcon {isOpen} onclick={() => (isOpen = !isOpen)} />
 		{:else}
 			<ul class="flex gap-3">
-				{#each navItems as { text, href }}
+				{#each navItems as { text, href }, index}
 					<a {href}>
 						<li
 							class="border-b-1 border-b-transparent duration-300 hover:border-b-[var(--secondary)]"
