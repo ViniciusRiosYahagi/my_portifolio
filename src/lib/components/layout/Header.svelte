@@ -3,7 +3,7 @@
 	import { Button } from '$lib/components';
 	import { MenuIcon } from '$lib/components/icons';
 	import { slide } from 'svelte/transition';
-	import { from } from '$lib/utils/gsap';
+	import { gsapFrom } from '$lib/utils/gsap';
 
 	let y = $state(0);
 	let x = $state(0);
@@ -14,7 +14,7 @@
 <svelte:body bind:clientWidth={x} />
 
 <header class={`fixed top-0 z-99 w-full p-5 duration-300 bg-[var(--bg-color)] ${y > 0 ? 'shadow-2xl' : ''}`}>
-	<nav {@attach from({ translateY: -50, duration: 1, opacity: 0})} class="flex items-center justify-around text-[var(--primary)]">
+	<nav {@attach gsapFrom({ translateY: -50, duration: 0.5, opacity: 0})} class="flex items-center justify-around text-[var(--primary)]">
 		<div>
 			<a href="/">
 				<h1 class="text-3xl text-[var(--secondary)] lg:text-5xl">矢作</h1>

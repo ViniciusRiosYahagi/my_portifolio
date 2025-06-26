@@ -2,9 +2,10 @@
 	import { Button, Section } from '$lib/components';
 	import { heroInfos } from '$lib/data/data';
 	import { Github } from '$lib/components/icons';
+	let { ...props } = $props()
 </script>
 
-<Section id="home">
+<Section {...props} id="home">
 	<div class="w-full max-w-xs lg:max-w-sm">
 		<img
 			class="lg:h-auto w-full rounded"
