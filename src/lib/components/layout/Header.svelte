@@ -4,7 +4,7 @@
 	import { MenuIcon } from '$lib/components/icons';
 	import { slide } from 'svelte/transition';
 	import { gsapFrom, gsapItems } from '$lib/utils/gsap';
-	import { windowX } from '$lib/stores/windows';
+	import { windowX } from '$lib/stores/windows.svelte';
 
 	let y = $state(0);
 	let x = $state(0);

@@ -19,7 +19,9 @@ export const aboutMe = [
 
   "I’m constantly exploring new trends and technologies, and whenever something catches my interest, I don't hesitate to dive in and learn more about it. Outside of programming, I have a strong interest in philosophy and psychology. I also enjoy spending my free time playing Counter-Strike 2, reading books, or creating music.",
 
-  "I had the opportunity to live and study in Japan until I was 12 years old, an experience that shaped my worldview and taught me the value of discipline, respect, and cultural diversity."
+  "I had the opportunity to live and study in Japan until I was 12 years old, an experience that shaped my worldview and taught me the value of discipline, respect, and cultural diversity.",
+
+ " I am currently learning about back-end."
 ];
 
 

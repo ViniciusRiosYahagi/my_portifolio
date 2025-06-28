@@ -1,4 +1,4 @@
-import { windowX } from '$lib/stores/windows';
+import { windowX } from '$lib/stores/windows.svelte';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { get } from 'svelte/store';
