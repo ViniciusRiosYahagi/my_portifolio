@@ -61,14 +61,14 @@ export const projects = [
     name: "Bot Shopie",
     tags: ["React", "Sass"],
     href: "https://bot-shopie.vercel.app/",
-    date: "12/09/2024",
+    date: "12/09/2023",
     text: "Bot Shopie was one of the first projects where I decided to challenge myself and create something that would push me deeper."
   },
   {
     name: "Hooks",
     tags: ["React", "Sass"],
     href: "https://react-hooks-project-murex.vercel.app/",
-    date: "21/01/2024",
+    date: "21/01/2023",
     text: "React Hook was one of my first projects. At the time, I didn’t have many ideas, so I decided to create a page styled like React Hooks documentation."
   },
   {
@@ -82,14 +82,14 @@ export const projects = [
     name: "Pokedex",
     tags: ["Next.js"],
     href: "https://pokedex-kappa-lemon.vercel.app/",
-    date: "10/07/2024",
+    date: "10/07/2023",
     text: "The Pokedex project was something I made a point of doing, even without much knowledge at the time. It was right at the start of my journey as a programmer and with Next.js."
   },
   {
     name: "Parallax",
     tags: ["HTML", "CSS"],
     href: "https://parallax-project-nine.vercel.app/",
-    date: "07/12/2023",
+    date: "07/12/2022",
     text: "The Parallax project was my favorite during the HTML and CSS course I took on Udemy, so I decided to post it."
   }
 ];
