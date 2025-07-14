@@ -21,7 +21,6 @@ export const aboutMe = [
 
   "I had the opportunity to live and study in Japan until I was 12 years old, an experience that shaped my worldview and taught me the value of discipline, respect, and cultural diversity.",
 
- " I am currently learning about back-end."
 ];
 
 
