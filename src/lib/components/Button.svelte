@@ -1,13 +1,6 @@
 <script lang="ts">
-	import type { Snippet } from 'svelte';
-
-	interface ButtonProps {
-		href?: string;
-		download?: string;
-		children: Snippet;
-		onclick?: (e: Event) => void;
-	}
-
+	import type { ButtonProps } from '$lib/types/types';
+	
 	let { href, download, children, onclick, ...props }: ButtonProps = $props();
 </script>
 

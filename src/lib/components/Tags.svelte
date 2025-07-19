@@ -1,7 +1,8 @@
 <script lang="ts">
+	import type { TagsProps } from "$lib/types/types";
 	import { gsapItems } from "$lib/utils/gsap";
 
-	let { tags, subtitle }: { tags: string[]; subtitle?: string } = $props();
+	let { tags, subtitle }: TagsProps = $props();
 </script>
 
 <div class="flex flex-col gap-3">

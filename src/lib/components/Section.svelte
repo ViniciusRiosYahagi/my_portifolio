@@ -1,7 +1,7 @@
 <script lang="ts">
-	import type { PropsText } from '$lib/types/types';
+	import type { TextProps } from '$lib/types/types';
 
-	let { id, title, children, isColumn = false, isCenter = true, ...props }: PropsText = $props();
+	let { id, title, children, isColumn = false, isCenter = true, ...props }: TextProps = $props();
 	let x = $state(0);
 </script>
 

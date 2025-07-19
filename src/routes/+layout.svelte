@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { Footer, Header } from '$lib/components/layout';
+	import { Footer, Header } from '$lib/components';
 	import '../app.css';
 
 	let { children } = $props();
