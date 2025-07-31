@@ -9,7 +9,7 @@
 
 <section
 	{...props}
-	class={`flex flex-col items-center gap-6 p-5 text-[var(--primary)] lg:min-h-screen lg:max-w-7xl lg:flex-row ${isCenter ? 'justify-center' : 'justify-start'}`}
+	class={`flex flex-col items-center gap-6 mt-5 text-[var(--primary)] lg:min-h-screen lg:max-w-7xl lg:flex-row lg:p-5 ${isCenter ? 'justify-center' : 'justify-start'}`}
 	{id}
 >
 	{#if title}

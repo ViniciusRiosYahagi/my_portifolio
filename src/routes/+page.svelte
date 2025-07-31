@@ -1,7 +1,7 @@
 <script>
 	import { Hero, Section, Tags, Button } from '$lib/components';
 	import { Email, Linkedin, WhatsApp } from '$lib/components/icons';
-	import { aboutMe, techs, projects } from '$lib/data/data';
+	import { aboutMe, techs, projects, contact } from '$lib/data/data';
 	import { gsapScroll, gsapItems } from '$lib/utils/gsap';
 </script>
 
@@ -13,7 +13,7 @@
 			<ul>
 				<li
 					{@attach gsapItems({ opacity: 0, translateX: 50, delay: index * 0.5 })}
-					class=" max-w-7xl"
+					class="max-w-7xl "
 				>
 					{text}
 				</li>
@@ -30,8 +30,8 @@
 				<Button {@attach gsapItems({ opacity: 0, delay: index * 0.3 })} {href}>
 					<div class="flex flex-col gap-3">
 						<p class="text-3xl">{name}</p>
-						<p class="max-w-prose text-balance">{text}</p>
-						<p>Date: {date}</p>
+						<p class="max-w-prose text-balance text-sm">{text}</p>
+						<p class="text-sm">Date: {date}</p>
 					</div>
 					<Tags {tags} />
 				</Button>
@@ -40,9 +40,11 @@
 	</Section>
 
 	<Section {@attach gsapScroll()} id="contact" title="Contact" isColumn={true} isCenter={false}>
-		<p {@attach gsapItems({ opacity: 0, duration: 1, translateX: 50, ease: "power3.inOut"})} class="text-balance">
-			I’m available for new projects and opportunities. If you have an idea, need someone to develop
-			a modern and functional website, or just want to chat about a project, feel free to reach out!
+		<p
+			{@attach gsapItems({ opacity: 0, duration: 1, translateX: 50, ease: 'power3.inOut' })}
+			class="text-balance"
+		>
+		{contact}
 		</p>
 
 		<div class="flex gap-3">

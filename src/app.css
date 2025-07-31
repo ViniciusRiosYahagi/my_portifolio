@@ -10,7 +10,5 @@ body, html {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: var(--text-color);
     background-color: var(--bg-color);
-    /* background-image: url('pattern2.png');
-    background-size: 500px 250px; */
     scroll-behavior: smooth;
 }

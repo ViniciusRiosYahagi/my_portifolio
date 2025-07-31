@@ -1,7 +1,7 @@
 export { default as Hero } from './Hero.svelte'
 export { default as Section } from './Section.svelte'
-export { default as Tags } from './Tags.svelte'
-export { default as Button } from './Button.svelte'
+export { default as Tags } from './ui/Tags.svelte'
+export { default as Button } from './ui/Button.svelte'
 export { default as Header } from './layout/Header.svelte'
 export { default as Footer } from "./layout/Footer.svelte"
 export { default as Email } from "./icons/Email.svelte";
