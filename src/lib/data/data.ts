@@ -11,7 +11,7 @@ export const heroInfos = {
   lastName: 'Rios',
   career: 'Full-Stack Web Developer',
   shortDescription:
-    'For the past 3 years, I’ve been building websites with a focus on the Svelte ecosystem. My work balances clean design, smooth user experience, and maintainable code. I love crafting efficient solutions that transform complex problems into simple, intuitive experiences. I’m not just a programmer; I like to contribute with ideas and create ideas to start a project.'
+    'Developer with 3 years of experience in front-end development using Svelte/SvelteKit, specializing in high-performance applications. Back-end experience in API development, SQL database modeling, and authentication (Auth). Focused on delivering complete, optimized, and scalable solutions, crafting efficient systems that transform complex problems into simple and intuitive experiences. I’m not just a programmer; I like to contribute with ideas and create ideas to start a project.'
 }
 
 export const aboutMe = [
