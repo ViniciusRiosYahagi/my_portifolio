@@ -53,6 +53,7 @@
 		{/each}
 		<Tags tags={techs.frontend} subtitle="Front-End" />
 		<Tags tags={techs.backend} subtitle="Back-End" />
+		<Tags tags={techs.database} subtitle="DataBase" />
 		<Tags tags={techs.tools} subtitle="Tools" />
 	</Section>
 
