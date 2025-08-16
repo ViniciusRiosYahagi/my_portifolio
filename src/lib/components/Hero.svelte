@@ -41,7 +41,7 @@
 				{@attach gsapFrom({ opacity: 0, duration: 2.5, ease: 'power3.inOut', translateX: 50 })}
 				class=" text-sm text-center text-pretty text-[var(--primary)] lg:text-left "
 			>
-				" {heroInfos.shortDescription} "
+				{heroInfos.shortDescription}
 			</p>
 		</div>
 

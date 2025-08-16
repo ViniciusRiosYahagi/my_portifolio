@@ -9,7 +9,7 @@ export const heroInfos = {
 	name: 'Vinicius',
 	middleName: '矢作',
 	lastName: 'Rios',
-	career: 'Full-Stack Web Developer',
+	career: 'Software Developer',
 	shortDescription:
 		'Developer with 3 years of experience in front-end development using Svelte/SvelteKit, specializing in high-performance applications. Back-end experience in API development, relational and non-relational databases, and authentication (Auth). Focused on delivering complete, optimized, and scalable solutions, crafting efficient systems that transform complex problems into simple and intuitive experiencesx. I’m not just a programmer; I like to contribute with ideas and create ideas to start a project.'
 };
